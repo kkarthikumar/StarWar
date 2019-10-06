@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/kkarthikumar/StarWar/gh-page-starwar/static/js/main.c8e76c75.chunk.js",
-    "main.js.map": "/kkarthikumar/StarWar/gh-page-starwar/static/js/main.c8e76c75.chunk.js.map",
-    "runtime-main.js": "/kkarthikumar/StarWar/gh-page-starwar/static/js/runtime-main.30cbf093.js",
-    "runtime-main.js.map": "/kkarthikumar/StarWar/gh-page-starwar/static/js/runtime-main.30cbf093.js.map",
-    "static/js/2.d982be22.chunk.js": "/kkarthikumar/StarWar/gh-page-starwar/static/js/2.d982be22.chunk.js",
-    "static/js/2.d982be22.chunk.js.map": "/kkarthikumar/StarWar/gh-page-starwar/static/js/2.d982be22.chunk.js.map",
-    "index.html": "/kkarthikumar/StarWar/gh-page-starwar/index.html",
-    "precache-manifest.8d16fb39b154aa44c7e2adc619e00b16.js": "/kkarthikumar/StarWar/gh-page-starwar/precache-manifest.8d16fb39b154aa44c7e2adc619e00b16.js",
-    "service-worker.js": "/kkarthikumar/StarWar/gh-page-starwar/service-worker.js"
+    "main.js": "/StarWar/static/js/main.742a0f21.chunk.js",
+    "main.js.map": "/StarWar/static/js/main.742a0f21.chunk.js.map",
+    "runtime-main.js": "/StarWar/static/js/runtime-main.2cb0ce1c.js",
+    "runtime-main.js.map": "/StarWar/static/js/runtime-main.2cb0ce1c.js.map",
+    "static/js/2.d982be22.chunk.js": "/StarWar/static/js/2.d982be22.chunk.js",
+    "static/js/2.d982be22.chunk.js.map": "/StarWar/static/js/2.d982be22.chunk.js.map",
+    "index.html": "/StarWar/index.html",
+    "precache-manifest.ec57b256d6fdd3c423523d2c57ebd86e.js": "/StarWar/precache-manifest.ec57b256d6fdd3c423523d2c57ebd86e.js",
+    "service-worker.js": "/StarWar/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.30cbf093.js",
+    "static/js/runtime-main.2cb0ce1c.js",
     "static/js/2.d982be22.chunk.js",
-    "static/js/main.c8e76c75.chunk.js"
+    "static/js/main.742a0f21.chunk.js"
   ]
 }
