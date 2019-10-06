@@ -1,18 +1,17 @@
 import React from "react";
-import { Router, Route } from "react-router";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Container from "@material-ui/core/Container";
 
 import CssBaseline from "@material-ui/core/CssBaseline";
 
 import { routes } from "./routes";
-import history from "./history";
 
 const App = () => {
   return (
     <>
       <CssBaseline />
       <Container maxWidth="md">
-        <Router history={history} forceRefresh={true}>
+        <Router>
           {routes.map((route, idx) => (
             <Route
               key={idx}

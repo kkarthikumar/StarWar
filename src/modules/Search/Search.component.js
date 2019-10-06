@@ -6,7 +6,6 @@ import { withStyles, Box } from "@material-ui/core";
 import styles from "./Search.component.style";
 import SearchListComponent from "./SearchList.component";
 import { compose } from "redux";
-import history from "../../history";
 import Button from "@material-ui/core/Button";
 
 const SearchComponent = props => {
@@ -17,7 +16,8 @@ const SearchComponent = props => {
     isMaxSearchExeeded,
     isLoggedIn,
     onLogoutUser,
-    currentUser
+    currentUser,
+    history
   } = props;
 
   const debounceOnChange = useCallback(debounce(onSearch, 400), []);

@@ -15,13 +15,15 @@ const LoginContainer = props => {
   const {
     isLoggedInError,
     actions: { onValidateUser },
-    isLoggedIn
+    isLoggedIn,
+    history
   } = props;
   return (
     <LoginComponent
       isLoggedIn={isLoggedIn}
       onValidateUser={onValidateUser}
       isLoggedInError={isLoggedInError}
+      history={history}
     />
   );
 };

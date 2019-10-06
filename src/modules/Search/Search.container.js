@@ -16,7 +16,8 @@ const SearchContainer = props => {
     planets,
     isMaxSearchExeeded,
     isLoggedIn,
-    currentUser
+    currentUser,
+    history
   } = props;
 
   return (
@@ -27,6 +28,7 @@ const SearchContainer = props => {
       isLoggedIn={isLoggedIn}
       onLogoutUser={onLogoutUser}
       currentUser={currentUser}
+      history={history}
     />
   );
 };

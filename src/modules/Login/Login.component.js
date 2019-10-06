@@ -1,8 +1,7 @@
-import React, { useState, memo, useContext } from "react";
+import React, { useState, memo } from "react";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-import history from "../../history";
 import Grid from "@material-ui/core/Grid";
 import { withStyles, Box } from "@material-ui/core";
 import styles from "./login.style";
@@ -12,7 +11,13 @@ const LoginComponent = props => {
   const [state, setState] = useState({ userName: "", password: "" });
   const [errorMessage, setErrorMessage] = useState(false);
 
-  const { isLoggedInError, onValidateUser, isLoggedIn, classes } = props;
+  const {
+    isLoggedInError,
+    onValidateUser,
+    isLoggedIn,
+    classes,
+    history
+  } = props;
   const { userName, password } = state;
   const handleChange = (value, fieldName) => {
     setState({ ...state, [fieldName]: value });
