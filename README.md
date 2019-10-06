@@ -13,11 +13,13 @@ npm install
 
 ## Libraries Used
 
+```
 1.Redux
 2.Lodash
 3.Material UI (for RWD)
 4.Redux Thunk
 5.axios(for API call)
+```
 
 ## Features
 
