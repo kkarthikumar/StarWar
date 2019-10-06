@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### StarWAR Application
 
-## Available Scripts
+## Authors
 
-In the project directory, you can run:
+Karthik Krishnasamy
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+rm -rf node_modules
+npm install
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Libraries Used
 
-### `npm test`
+```
+1.Redux
+2.Lodash
+3.Material UI (for RWD)
+4.Redux Thunk
+5.axios(for API call)
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+Create a React application having two screens with proper navigation. You
+will be using API from the website http://swapi.co .Please go through the
+documentation of the swapi website and understand the API response carefully
+to chose the right set of APIs and call them with the proper arguments.
+The application is supposed to have 2 screens:
+Screen 1 (Login Screen)
+Allow the user to login as a character from STAR WARS using the character
+name as the username and birth year as the password.
+Example:
+• Username: Luke Skywalker
+• Password : 19BBY
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Screen 2 (Search Screen)
+Implement a type-along search which searches for planets and lists them in
+components that are sized relative to their population on every keypress in the
+input field. (eg: you can use a bigger font size for a planet with larger population,
+or even show a bigger container size for a planet with larger population - we
+would like to see your creativity). On clicking the item from the results of the
+type-along search, it should display the corresponding planet information.
+You also need to provide the relevant Logout flow properly in your application.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Bonus Points
+  Only the user Luke Skywalker should be able to make more than 15 searches
+in a minute.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Improvements
 
-### `npm run eject`
+ Need to improve the test coverage.
+ 
+## Code WalkThrough
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. It contains folders actions, componenents, constants, containers, reducers, routes and styles
+2. Actions contains redux actions.
+3. Constants has the app constants(can configure no of searches and timing)
+4. Containers are connected to the store to drill down the props to child components
+5. Reducers are store chunks
+6. Routes carry the react router routes
+7. Styles are material UI styles used accross the application
