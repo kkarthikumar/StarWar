@@ -11,6 +11,10 @@ rm -rf node_modules
 npm install
 ```
 
+## Published URL
+
+https://kkarthikumar.github.io/StarWar/#/
+
 ## Libraries Used
 
 ```
