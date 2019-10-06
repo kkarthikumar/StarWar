@@ -1,4 +1,5 @@
 import React, { useCallback } from "react";
+import PropTypes from "prop-types";
 import debounce from "lodash/debounce";
 import TextField from "@material-ui/core/TextField";
 import Grid from "@material-ui/core/Grid";
@@ -59,6 +60,17 @@ const SearchComponent = props => {
       <SearchListComponent planets={planets} />
     </>
   );
+};
+
+SearchComponent.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+  planets: PropTypes.array,
+  classes: PropTypes.object,
+  isMaxSearchExeeded: PropTypes.bool.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  onLogoutUser: PropTypes.func.isRequired,
+  currentUser: PropTypes.object.isRequired,
+  history: PropTypes.func.isRequired
 };
 
 export default compose(withStyles(styles)(SearchComponent));

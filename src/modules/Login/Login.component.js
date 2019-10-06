@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import { withStyles, Box } from "@material-ui/core";
 import styles from "./login.style";
 import isEmpty from "lodash/isEmpty";
+import PropTypes from "prop-types";
 
 const LoginComponent = props => {
   const [state, setState] = useState({ userName: "", password: "" });
@@ -85,6 +86,14 @@ const LoginComponent = props => {
       </Grid>
     </>
   );
+};
+
+LoginComponent.propTypes = {
+  onValidateUser: PropTypes.func.isRequired,
+  classes: PropTypes.object,
+  isLoggedInError: PropTypes.bool.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  history: PropTypes.object.isRequired
 };
 
 export default memo(withStyles(styles)(LoginComponent));

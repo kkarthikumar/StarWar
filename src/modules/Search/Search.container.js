@@ -51,6 +51,16 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
+SearchContainer.propTypes = {
+  actions: PropTypes.func.isRequired,
+  planets: PropTypes.array,
+  classes: PropTypes.object,
+  isMaxSearchExeeded: PropTypes.bool.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  currentUser: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
+};
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps

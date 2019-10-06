@@ -41,6 +41,14 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
+LoginContainer.propTypes = {
+  actions: PropTypes.object.isRequired,
+  classes: PropTypes.object,
+  isLoggedInError: PropTypes.bool.isRequired,
+  isLoggedIn: PropTypes.bool.isRequired,
+  history: PropTypes.object.isRequired
+};
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps
