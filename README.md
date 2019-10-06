@@ -6,8 +6,10 @@ Karthik Krishnasamy
 
 ## Installation
 
+```
 rm -rf node_modules
 npm install
+```
 
 ## Libraries Used
 
