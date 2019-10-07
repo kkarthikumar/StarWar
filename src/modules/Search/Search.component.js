@@ -70,7 +70,7 @@ SearchComponent.propTypes = {
   isLoggedIn: PropTypes.bool.isRequired,
   onLogoutUser: PropTypes.func.isRequired,
   currentUser: PropTypes.object.isRequired,
-  history: PropTypes.func.isRequired
+  history: PropTypes.object.isRequired
 };
 
 export default compose(withStyles(styles)(SearchComponent));
